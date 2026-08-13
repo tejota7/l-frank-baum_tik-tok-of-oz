@@ -40,3 +40,65 @@ section[epub|type~="preface"]{
 	}
 }
 /* End centered dedications */
+
+.chapter-start{
+	text-transform: uppercase;
+}
+
+/*
+	Tik-Tok of Oz has three pieces of custom typography:
+   	* Chapter 7 - Tik-Tok's instructions
+   	* Chapter 13 - Tube signage
+   	* Chapter 17 - Ruggedo's incantation
+   	Styling here attempts to preserve the original text's indentation,
+	margins, hanging punctuation, casing, and character spacing
+*/
+header{
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+#chapter-7 blockquote:first-of-type p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-7 blockquote:last-of-type p{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+#chapter-7 b,
+#chapter-13 b{
+	text-transform: uppercase;
+}
+
+#chapter-7 footer:first-of-type p{
+	text-indent: 1em;
+}
+
+#chapter-13 blockquote:last-of-type{
+	margin-left: 4em;
+}
+
+#chapter-13 blockquote span.signage{
+	letter-spacing: .2em;
+	margin-right: -.2em;
+	margin-left: 2em;
+}
+/* End card, sign */
+
+/* Hanging quotation mark */
+#chapter-13 blockquote p span:first-child,
+#chapter-17 blockquote p span:first-child{
+	margin-left: -.45em;
+}
+
+@supports (hanging-punctuation: first){
+	#chapter-17 blockquote p span:first-child{
+		margin-left: 0;
+	}
+	#chapter-17 blockquote p{
+		hanging-punctuation: first;
+	}
+}
