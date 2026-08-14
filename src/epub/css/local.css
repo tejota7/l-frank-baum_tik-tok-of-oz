@@ -79,7 +79,7 @@ header{
 	margin-left: 4em;
 }
 
-#chapter-13 blockquote span.signage{
+#chapter-13 blockquote:last-of-type span:last-of-type{
 	letter-spacing: .2em;
 	margin-left: 2em;
 	margin-right: -.2em;
