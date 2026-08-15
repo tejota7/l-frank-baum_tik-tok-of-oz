@@ -15,13 +15,29 @@ section[epub|type~="dedication"] > *{
 
 section[epub|type~="preface"]{
 	margin-top: 20vh;
+
+	b{
+		font-variant: normal;
+		text-transform: uppercase;
+	}
+
+	footer p:last-child{
+		display: inline-block;
+		font-size: .83em;
+		margin-left: 1em;
+		text-align: center;
+		word-spacing: .15em;
+	}
 }
 
 /* Signature only used in the preface */
 [epub|type~="z3998:signature"]{
+	font-size: 1.05em;
 	font-variant: small-caps;
+	margin-right: 1em;
 	margin-top: 1em;
 	text-align: right;
+	word-spacing: .15em;
 }
 
 @supports(display: flex){
