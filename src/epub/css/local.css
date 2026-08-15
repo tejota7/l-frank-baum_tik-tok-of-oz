@@ -103,7 +103,6 @@ header{
 /* End card, sign */
 
 /* Hanging quotation mark */
-#chapter-13 blockquote p span:first-child,
 #chapter-17 blockquote p span:first-child{
 	margin-left: -.45em;
 }
