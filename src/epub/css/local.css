@@ -57,10 +57,6 @@ section[epub|type~="preface"]{
 }
 /* End centered dedications */
 
-.chapter-start{
-	text-transform: uppercase;
-}
-
 /* Tik-Tok of Oz has three pieces of custom typography:
    	* Chapter 7 - Tik-Tok's instructions
    	* Chapter 13 - Tube signage
